@@ -1,0 +1,72 @@
+{
+  "command": [
+    "./mvnw",
+    "--errors",
+    "--show-version",
+    "-B",
+    "-ntp",
+    "--log-file",
+    "/workspace/scratch/908a08b14060/javaparser-4074-evidence/final-reactor-slow/maven.log",
+    "clean",
+    "test",
+    "--activate-profiles",
+    "AlsoSlowTests"
+  ],
+  "started_at": "2026-10-17T23:59:50.452912+00:00",
+  "finished_at": "2026-10-18T00:02:22.893877+00:00",
+  "exit_code": 0,
+  "reactor_modules_succeeded": 9,
+  "module_aggregates": [
+    {
+      "module": "javaparser-core-testing",
+      "tests": 2924,
+      "failures": 0,
+      "errors": 0,
+      "skips": 8
+    },
+    {
+      "module": "javaparser-core-testing-bdd",
+      "tests": 625,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0
+    },
+    {
+      "module": "javaparser-core-generators",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0
+    },
+    {
+      "module": "javaparser-core-serialization",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0
+    },
+    {
+      "module": "javaparser-symbol-solver-testing",
+      "tests": 2268,
+      "failures": 0,
+      "errors": 0,
+      "skips": 27
+    }
+  ],
+  "totals": {
+    "tests": 5831,
+    "failures": 0,
+    "errors": 0,
+    "skips": 35
+  },
+  "maven_log_sha256": "b3691d527a7539384101b29cdacc653dd270712556fdb5a4cb6b04290773c998",
+  "source_sha256": {
+    "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java": "6889d919ff394c46f062aaf762a43ae8e2f0189b34c2eb1ac732cc3ecca2603e",
+    "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.java": "2f2332d18e4aa3f3a3ffd05b728c316fa076acda041eeec4431e25f6688a5ffd",
+    "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/Issue4074Test.java": "728756173731ad002590c82f706a8664bfff97456f0e4a87c96f6454a0dbe996"
+  },
+  "retained_surefire_diagnostics": [
+    "final-reactor-slow/surefire-diagnostics/javaparser-symbol-solver-testing/2026-10-17T20-00-00_675-jvmRun1.dumpstream"
+  ],
+  "scope": "Linux, Temurin Java 17.0.20.1, Maven 3.10.0, clean test --activate-profiles AlsoSlowTests. Not the upstream hosted OS/JDK matrix."
+}
